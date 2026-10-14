@@ -16,4 +16,4 @@ print("-" * 38)                            # 구분선(빼기 기호 38개)
 for sensor in sorted(values):              # 센서 이름순(규칙 4항)
     vs = values[sensor]                    # 그 센서의 측정값 목록
     # 개수·최솟값·최댓값·평균. :>8.2f는 소수 둘째 자리(규칙 3항)
-    print(f"{sensor:<8}{len(vs):>6}{min(vs):>8.2f}{max(vs):>8.2f}{statistics.mean(vs):>8.2f}")
+    print(f"{sensor:<8}{len(vs):>6}{min(vs):>8.2f}{max(vs):>8.2f}{statistics.mean(vs):>8.1f}")
